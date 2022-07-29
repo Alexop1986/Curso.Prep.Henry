@@ -39,9 +39,9 @@ return x + y;
 }
 
 function resta(x, y) {
-  // Resta "y" de "x" y devuelve el valor
+  // Resta "y" de "x" y devuelve el valo
   // Tu código:
-  return y - x;
+  return x - y;
 }
 
 function multiplica(x, y) {
@@ -165,8 +165,8 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero >=0) {
-    return ' Es Positivo'
+  if(numero >0) {
+    return 'Es Positivo'
   }
   return 'Es negativo'
 }
