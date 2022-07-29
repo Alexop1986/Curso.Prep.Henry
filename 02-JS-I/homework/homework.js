@@ -165,17 +165,22 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero >0) {
-    return 'Es Positivo'
+  if(numero === 0) {
+    return false;
   }
-  return 'Es negativo'
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
+  }
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
- return 'hola ' + str + '!'
+ return str + '!'
 }
 
 function combinarNombres(nombre, apellido) {
@@ -227,12 +232,15 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U" || letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
-    return " Es vocal"
-}else{
-    return " Dato incorrecto"
+  if (letra.length >1) {
+    return 'Dato Incorreto';
+  }
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+    return " Es vocal";
 }
+    return " Dato incorrecto";
 }
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
