@@ -19,7 +19,7 @@ function mayoriaDeEdad(edad) {
   if (edad >= 18) {
     return 'Allowed';
   }
-  return 'Not Allowed'
+  return 'Not allowed';
 }
   
 function conection(status) {
@@ -47,16 +47,16 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if(idioma === 'aleman') {
-    return 'Gutten Tag';
+    return 'Guten Tag!';
   }
   else if (idioma === 'mandarin') {
-    return ' Ni Hao!';
+    return 'Ni Hao!';
   }
   else if (idioma === 'ingles') {
-    return 'Hello';
+    return 'Hello!';
   }
   else {
-    return  'hola';
+    return  'Hola!';
   }
 }
 
@@ -74,7 +74,7 @@ function colors(color) {
       case 'red':
         return 'This is red';
         case 'green':
-          return'This ir green';
+          return'This is green';
           case 'orange':
             return'This is orange';
               default:
@@ -119,7 +119,7 @@ function fizzBuzz(numero) {
     return 'fizzbuzz'
    }
   else if (numero % 3 === 0) {
-    return 'Fizz';
+    return 'fizz';
   }
   else if( numero % 5 ===0) {
     return 'buzz';
@@ -142,10 +142,10 @@ if (num1 > num2 && num1 > num3 && num1 > 0) {
   return 'Número 1 es mayor y positivo';
 }  
 else if (num1 < 0 || num2  < 0 || num3 <0) {
-  return ' Hay negativos';
+  return 'Hay negativos';
 }
 else if( num3 > num1 && num3 > num2) {
-  return num3 + 1
+  return num3 + 1;
 }
 else if (num1 === 0 || num2 === 0 || num3 === 0) {
   return 'Error'
