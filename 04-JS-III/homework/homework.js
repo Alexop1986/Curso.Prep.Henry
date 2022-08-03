@@ -38,7 +38,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-return array.push (elemento);
+  array[array.length] = elemento;
+  return array;
 }
 
 
@@ -47,8 +48,10 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift (elemento);
+    array.unshift (elemento); 
+    return array;
 }
+
 
 
 function dePalabrasAFrase(palabras) {
@@ -91,7 +94,7 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  
+
 }
 
 
