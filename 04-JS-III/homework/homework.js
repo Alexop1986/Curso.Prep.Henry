@@ -112,7 +112,7 @@ for(var i = 0; i < numeros.length; i++) {
     grande = numeros [i]
   }
 }
-return cajita;
+return grande;
 }
 
 
@@ -152,7 +152,7 @@ function diaDeLaSemana(numeroDeDia) {
  if (numeroDeDia === 1 || numeroDeDia === 7) {
   return 'Es fin de semana'
  }
- return 'Es dia laboral'
+ return 'Es dia Laboral'
 } 
 
 
